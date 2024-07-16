@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coupon Selling and Swapping</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container">
+            <h1>Coupon Hub</h1>
+            <ul>
+                <li><a href="#sell-coupons">Sell Coupons</a></li>
+                <li><a href="#swap-coupons">Swap Coupons</a></li>
+                <li><a href="#available-coupons">Available Coupons</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Sell Coupons Section -->
+        <section id="sell-coupons">
+            <h2>Sell Your Coupons</h2>
+            <form id="sell-form">
+                <label for="sell-title">Coupon Title:</label>
+                <input type="text" id="sell-title" name="sell-title" required>
+                
+                <label for="sell-description">Description:</label>
+                <textarea id="sell-description" name="sell-description" required></textarea>
+                
+                <label for="sell-price">Price:</label>
+                <input type="number" id="sell-price" name="sell-price" required>
+                
+                <label for="sell-expiration">Expiration Date:</label>
+                <input type="date" id="sell-expiration" name="sell-expiration" required>
+                
+                <button type="submit">Sell Coupon</button>
+            </form>
+        </section>
+
+        <!-- Swap Coupons Section -->
+        <section id="swap-coupons">
+            <h2>Swap Your Coupons</h2>
+            <form id="swap-form">
+                <label for="swap-title">Coupon Title:</label>
+                <input type="text" id="swap-title" name="swap-title" required>
+                
+                <label for="swap-description">Description:</label>
+                <textarea id="swap-description" name="swap-description" required></textarea>
+                
+                <label for="swap-for">Swap For:</label>
+                <input type="text" id="swap-for" name="swap-for" required>
+                
+                <label for="swap-expiration">Expiration Date:</label>
+                <input type="date" id="swap-expiration" name="swap-expiration" required>
+                
+                <button type="submit">Swap Coupon</button>
+            </form>
+        </section>
+
+        <!-- Available Coupons Section -->
+        <section id="available-coupons">
+            <h2>Available Coupons</h2>
+            <div id="coupons-list">
+                <!-- Dynamically populated list of available coupons for sale and swap -->
+            </div>
+        </section>
+
+        <!-- Profile Section -->
+        <section id="profile">
+            <h2>User Profile</h2>
+            <form id="profile-form">
+                <label for="profile-username">Username:</label>
+                <input type="text" id="profile-username" name="profile-username" required>
+                
+                <label for="profile-email">Email:</label>
+                <input type="email" id="profile-email" name="profile-email" required>
+                
+                <label for="profile-password">Password:</label>
+                <input type="password" id="profile-password" name="profile-password" required>
+                
+                <button type="submit">Update Profile</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- Contact Section -->
+    <footer id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Email: rahulraj.work7@gmail.com</p>
+            <p>Phone: +917903204530</p>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <script src="static\file.js"></script>
+</body>
+</html>
